@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  background-image: url("images/pizzabg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  cursor: pointer;
+}
+nav {
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav-button {
+  margin: 1rem 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.nav-button:hover {
+  transform: translateY(-10%);
+  opacity: 100%;
+}
+.select {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.home {
+  color: white;
+}
+.main {
+  max-width: 700px;
+  padding: 4rem;
+  margin: 6rem 0;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 4rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.menu h2 {
+  color: white;
+}
+.menu p {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+.contact {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
